@@ -16,11 +16,17 @@ main > figure {
   height: 100%;
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main > figure img {
   height: 100%;
-  width: 100%;
+  background-color: red;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -32,13 +38,5 @@ main > figure > span {
   border-radius: 50%;
   position: absolute;
   top: 22%;
-}
-
-main > figure > span:nth-of-type(1) {
-  left: 43vw;
-}
-
-main > figure > span:nth-of-type(2) {
-  left: 53vw;
 }
 /*# sourceMappingURL=style.css.map */
