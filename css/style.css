@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: url("img/banana-cartoon-png-Images-PNG-Transparent");
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main > figure {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+main > figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main > figure > span {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 22%;
+}
+
+main > figure > span:nth-of-type(1) {
+  left: 43vw;
+}
+
+main > figure > span:nth-of-type(2) {
+  left: 53vw;
+}
+/*# sourceMappingURL=style.css.map */

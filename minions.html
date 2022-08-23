@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main onmousemove="eye(event)">
+        <figure>
+            <span></span>
+            <span></span>
+            <img src="img/Layer 2.png" alt="">
+        </figure>
+    </main>
+</body>
+<script>
+    function eye(e) {
+        let x= e.clientX;
+        let Y= e.clientY;
+        let leftEye=document.querySelector('main>figure>span:nth-of-type(1)');
+        let RightEye=document.querySelector('main>figure>span:nth-of-type(2)');
+        leftEye.style.left=x/17.75+620+'px'
+        leftEye.style.top=Y/17+150+'px'
+        RightEye.style.left=x/19.95+790+'px'
+       RightEye.style.top=Y/15+150+'px'
+    }
+</script>
+
+</html>
